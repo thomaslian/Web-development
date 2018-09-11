@@ -8,10 +8,20 @@ body {
 }
 
 #wrapper {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+footer, #wrapper {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 5%;
 }
+
+h2 {
+    margin: 0;
+    padding: 12px 0 12px 0;
+}
+
 
 /***************************************
 HEADER
@@ -20,10 +30,19 @@ HEADER
 
 header h1 {
     margin: 0;
-    padding: 50px 0;
+    padding: 30px 0 50px 0;
     text-align: center;
     font-family: "Kaushan Script", sans-serif;
     font-size: 76px;
+    text-decoration: none;
+    
+}
+
+header a {
+        /*Remove style*/
+        text-decoration: none;
+        /*Set the color to white*/
+        color: white;
 }
 
 
@@ -33,37 +52,87 @@ NAVIGATION
 ***************************************/
 
 nav {
-    text-align:center;
+    /*Remove spaces between list items/boxes*/
+    font-size: 0;
+    /*Allign all text to the center*/
+    text-align: center;
+    /*Create a small shadow beneath the navigation bar*/
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.23);
 }
 nav ul {
+    /*Remove list style from the unordered list*/
     list-style: none;
+    /*Set margin to 0*/
     margin: 0;
+    /*Set padding to 0*/
     padding: 0;
-    overflow: hidden;
 }
 
 nav li {
+    /*Navigation should be inline*/
     display: inline;
 }
 
 nav a {
+    /*Navigation should be inline blocks horizontal*/
     display: inline-block;
+    /*Remove line beneath words*/
     text-decoration: none;
+    /*Add som air around the word*/
     padding: 14px 26px;
+    /*Make the text thicker*/
     font-weight: 600;
+    /*Make the text bigger*/
     font-size: 18px;
 }
+
+/***************************************
+CONTENT
+***************************************/
+
+figure {
+    margin: 0;
+}
+
 
 /***************************************
 FOOTER
 ***************************************/
 
+footer ul {
+    margin: 0;
+}
+
+footer h3  {
+    color: white;
+    padding: 10px 0 5px 0;
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
 
 /***************************************
 COLORS
 ***************************************/
 body {
 	background-color: #fff;
+}
+
+h2 {
+    color: #009688; 
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00796B;
+    margin: 1em 0;
+    padding: 0;
 }
 
 header {
@@ -79,7 +148,21 @@ nav a {
     color: white;
 }
 
-nav li a:hover {
+nav li a:hover, nav a.selected {
     background-color: #00796B;
 }
+
+footer {
+    background-color: #00796B;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+
 
