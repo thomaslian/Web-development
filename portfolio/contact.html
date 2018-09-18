@@ -2,22 +2,68 @@
 <html>
 
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600|Kaushan+Script');
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact page - Thomas Lian Ødegaard</title>
+    <title>Portfolio - Thomas Lian Ødegaard</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <header>
+        <!--Heading-->
+        <h1><a href="index.html">Thomas Lian Ødegaard</a></h1>
+    </header>
+    <!--Navigation-->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact data</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="cv/index.html">CV</a></li>
+            <li><a href="contact.html" class="selected">Contact me</a></li>
         </ul>
     </nav>
-    <h1>Contact page</h1>
-    <p>Contact me by email: <a href="mailto:me@thomas.no">me@thomas.no</a></p>
+    <!--Page content-->
+    <div id="wrapper">
+        <h2>Contact page</h2>
+        <p>Contact me by email: <a href="mailto:thomalod@stud.ntnu.no">thomalod@stud.ntnu.no</a></p>
+    </div>
+    <!--Footer of page-->
+    <hr id="footer-line">
+    <footer>
+        <div class="footer-pages">
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio/index.html">Portfolio</a></li>
+                <li><a href="cv/index.html">CV</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </div>
+        <div class="social-logos">
+
+            <li>
+                <a href="https://twitter.com/thomasliano" target="_blank">
+                    <img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter Logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/thomas-lian-%C3%B8degaard-7b22385a/" target="_blank">
+                    <img src="img/square-linkedin-512.png" alt="LinkedIn Logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/thomaslian" target="_blank">
+                    <img src="img/GitHub-Mark-64px.png" alt="Github Logo">
+                </a>
+            </li>
+        </div>
+
+        <p>&copy; 2018 Thomas Lian Ødegaard</p>
+    </footer>
 </body>
 
 </html>

@@ -7,14 +7,15 @@ body {
     margin: 0;
 }
 
-#wrapper {
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
-}
-
 footer, #wrapper, #footer-line {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 5%;
+}
+
+#wrapper {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -22,9 +23,37 @@ h2 {
     padding: 16px 0 16px 0;
 }
 
+h3 {
+    margin-bottom: 0;
+}
+
+h4 {
+    font-style: italic;
+    margin: 0;
+    padding: 2px 0 6px 0;
+    font-weight: 400;
+}
+
 p {
+    padding: 0 0 12px;
+    margin: 0;
+}
+
+a {
+    /*Remove line beneath words*/
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+/*Line splitting about me and my hobbies*/
+.splitter-line, .cv-line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00796B;
+    margin: 1em 0;
     padding: 0;
-    margin: 0 0 12px;
 }
 
 
@@ -81,8 +110,6 @@ nav li {
 nav a {
     /*Navigation should be inline blocks horizontal*/
     display: inline-block;
-    /*Remove line beneath words*/
-    text-decoration: none;
     /*Add som air around the word*/
     padding: 14px 26px;
     /*Make the text thicker*/
@@ -94,25 +121,19 @@ nav a {
 /***************************************
 PAGE: INDEX
 ***************************************/
+.page-content p{
+    text-align: justify;
+}
+
 #index-picture{
     float: right;
     width: 300px;
-    margin-left: 16px;
+    margin-left: 24px;
     font-size: 14px;
 }
 
 figure {
     margin: 0;
-}
-
-/*Line splitting about me and my hobbies*/
-hr.splitter-line {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #00796B;
-    margin: 1em 0;
-    padding: 0;
 }
 
 #gallery {
@@ -126,12 +147,15 @@ hr.splitter-line {
     margin: 0 1% 20px 1%;
     padding: 0;
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.35);
+    min-height: 422px;
 }
 #gallery h3 {
     padding-left: 14px;
 }
 #gallery p {
     padding: 14px;
+    /*Makes the text look nicer*/
+    text-align: justify;
 }
 
 #gallery img {
@@ -146,6 +170,16 @@ hr.splitter-line {
     display: table;
 }
 
+/***************************************
+PAGE: CV
+***************************************/
+.cv-line {
+    margin-top: 0;
+}
+
+.cv-heading {
+    padding-bottom: 2px;
+}
 
 /***************************************
 FOOTER
@@ -159,8 +193,27 @@ FOOTER
     width: auto;
 }
 
+.social-logos li{
+    float: right;
+    text-align: center;
+    margin: 10px;
+    /*Remove list style from the unordered list*/
+    list-style: none;
+
+}
+
+.social-logos img {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+.social-logos, .footer-pages {
+    display: inline-block;
+    width: 46%;
+}
+
 footer li {
-    padding: 2px 0 0 4px;
+    padding: 4px 0;
 }
 
 footer a {
@@ -168,6 +221,7 @@ footer a {
     display: inline;
     /*Remove line beneath words*/
     text-decoration: none;
+    font-weight: 400;
 }
 
 footer h3  {
@@ -192,8 +246,15 @@ h2 {
     color: #009688; 
 }
 
-header {
+h4 {
+    color: gray;
+}
+
+a {
     color: white;
+}
+
+header {
     background-color: #009688;
 }
 
@@ -201,12 +262,12 @@ nav ul {
     background-color: #004D40;
 }
 
-nav a {
-    color: white;
-}
-
 nav li a:hover, nav a.selected {
     background-color: #00796B;
+}
+
+#wrapper a{
+    color: black;
 }
 
 #footer-line {
@@ -215,10 +276,6 @@ nav li a:hover, nav a.selected {
 
 footer {
     background-color: #009688;
-}
-
-footer a {
-    color: white;
 }
 
 footer h3 {
@@ -238,4 +295,7 @@ COLORS INDEX
     background: #009688;
 }
 
+#gallery a{
+    color: white;
+}
 

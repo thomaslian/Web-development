@@ -22,10 +22,11 @@
         <ul>
             <li><a href="index.html" class="selected">Home</a></li>
             <li><a href="portfolio/index.html">Portfolio</a></li>
-            <li><a href="cv.html">CV</a></li>
+            <li><a href="cv/index.html">CV</a></li>
             <li><a href="contact.html">Contact me</a></li>
         </ul>
     </nav>
+    <!--Page content-->
     <div id="wrapper">
         <!--About me heading-->
         <h2>About me</h2>
@@ -33,75 +34,105 @@
             <img src="img/thomas-lian-odegaard-golden-gate-bridge.jpg" alt="Thomas Lian Ødegaard standing by golden gate bridge">
             <figcaption>Picture from when I was travelling in the United States</figcaption>
         </figure>
-        <p>
-            Hello! My name is Thomas and welcome to my page. I am currently studying web development at NTNU in Gjøvik.
-            This would be my last semester at NTNU, and I am therefore looking for a job where I can use my skills.
-        </p>
-        <p>
-            At NTNU I learned a lot about web development. Here are some of the main topics I have been through and
-            know a lot about:
-        </p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Design</li>
-            <li>PHP</li>
-            <li>SEO</li>
-        </ul>
-        <p>
-            You could also take a look at my <strong>portfolio page</strong>. Here I have published projects that i
-            have been working on at school and on my freetime.
-        </p>
+        <div class="page-content">
+            <p>
+                Hello! My name is Thomas and welcome to my page. I am currently studying web development at NTNU in
+                Gjøvik.
+                This would be my last semester at NTNU, and I am therefore looking for a job where I can use my skills.
+            </p>
+            <p>
+                At NTNU I learned a lot about web development. Here are some of the main topics I have been through and
+                know a lot about:
+            </p>
+            <ul>
+                <li><abbr title="HyperText Markup Language">HTML</abbr></li>
+                <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+                <li>Javascript</li>
+                <li>Design</li>
+                <li><abbr title="Personal home page: Hypertext Preprocessor">PHP</abbr></li>
+                <li><abbr title="Search Engine Optimization">SEO</abbr></li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+            <p>
+                You could also take a look at my <a href="portfolio/index.html">portfolio page</a>. Here I have
+                published projects that i
+                have been working on at school and on my freetime.
+            </p>
+        </div>
         <hr class="splitter-line">
         <!--Hobbies heading-->
         <h2>My hobbies</h2>
-            <ul id="gallery">
-                <!--List of all my hobbies-->
-                <li>
-                    <!--Travel-->
-                    <h3>Travel</h3>
-                    <img src="img/country-road-usa.jpg" alt="Old road in the desert in the US">
-                    <!--
+        <ul id="gallery">
+            <!--List of all my hobbies-->
+            <li>
+                <!--Travel-->
+                <h3>Travel</h3>
+                <img src="img/country-road-usa.jpg" alt="Old road in the desert in the US">
+                <!--
                     Countries: USA, Mexico, Greece, Sweden, Denmark, Norway, Germany, Poland, Thailand, Spain and Marocco
                     States: New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina, Georgia, Florida, Alabama, Mississippi, Louisiana,
                     Texas, New Mexico, Arizona, Nevada and California
                     -->
-                    <p>
-                        One of my favorite hobbies is travelling. So far i have been in 11 countries in the world and 18 states in the US. 
-                        And I can not wait to explore more of the world.
-                    </p>
-                </li>
-                <li>
-                    <!--Computers-->
-                    <h3>Computers</h3>
-                    <img src="img/my-linux-server.jpg" alt="Thomas Lian Ødegaard standing by golden gate bridge">
-                    <p>
-                        One of my favorite hobbies is travelling. So far i have been in 11 countries and 18 states in
-                        the US. And I cant wait to explore more of the world.
-                    </p>
-                </li>
-                <li>
-                    <!--Programming-->
-                    <h3>Programming</h3>
-                    <img src="img/programming.png" alt="Picture of a HTML code i wrote">
-                    <p>
-                        One of my favorite hobbies is travelling. So far i have been in 11 countries and 18 states in
-                        the US. And I cant wait to explore more of the world.
-                    </p>
-                </li>
-            </ul>
-    </div>
-    <hr id="footer-line">
-    <!--Footer of page-->
-    <footer>
-            <h3>Pages</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio/index.html">Portfolio</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact me</a></li>
+                <p>
+                    One of my favorite hobbies is travelling. So far i have been in <strong>11 countries</strong> in
+                    the world and <strong>18
+                        states</strong> in the US.
+                    And I can not wait to explore more of the world.
+                </p>
+            </li>
+            <li>
+                <!--Computers-->
+                <h3>Computers</h3>
+                <img src="img/my-linux-server.jpg" alt="Thomas Lian Ødegaard standing by golden gate bridge">
+                <p>
+                    I got my first computer when I was little. And have after this been builing my own computers and
+                    servers.
+                    I have listed some of my projects on my <a href="portfolio/index.html">portfolio page</a>.
+                </p>
+            </li>
+            <li>
+                <!--Programming-->
+                <h3>Programming</h3>
+                <img src="img/programming.png" alt="Picture of a HTML code i wrote">
+                <p>
+                    I have always been interested in making software and games. In 2012 I learned my first programming
+                    language, Golang. And I am now making my own games and apps.
+                </p>
+            </li>
         </ul>
+    </div>
+    <!--Footer of page-->
+    <hr id="footer-line">
+    <footer>
+        <div class="footer-pages">
+            <h3>Pages</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio/index.html">Portfolio</a></li>
+                <li><a href="cv/index.html">CV</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </div>
+        <div class="social-logos">
+
+            <li>
+                <a href="https://twitter.com/thomasliano" target="_blank">
+                    <img src="img/Twitter_Social_Icon_Circle_Color.png" alt="Twitter Logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/thomas-lian-%C3%B8degaard-7b22385a/" target="_blank">
+                    <img src="img/square-linkedin-512.png" alt="LinkedIn Logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/thomaslian" target="_blank">
+                    <img src="img/GitHub-Mark-64px.png" alt="Github Logo">
+                </a>
+            </li>
+        </div>
+
         <p>&copy; 2018 Thomas Lian Ødegaard</p>
     </footer>
 </body>
