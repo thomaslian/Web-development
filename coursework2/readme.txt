@@ -1,0 +1,2 @@
+All the images and texts used for the mock-ups of this coursework were taken from Marvel site (http://www.marvel.com) and they might be subject to copyright. 
+The daredevil.ttf font was downloaded from http://www.fontspace.com/filmfonts/daredevil and it is licensed as Freeware which means that it can be used for both Personal and Commercial for free.
