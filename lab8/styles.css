@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: stretch;
+}
+
+nav {
+    flex: 10;
+    display: flex;
+    background-color: lightcoral;
+}
+
+nav>* {
+    /* flex: 1; 
+    is the same as saying flex: 1 1 auto;
+    or in other words, 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;*/
+    flex: 1;
+    /* all the elemnts will be flex container 
+    so that we can align them vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    flex: 90;
+    background-color: lightgreen;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section>* {
+    text-align: justify;
+    margin: 5% 5% 0 5%;
+}
+
+section>*:last-child {
+    margin-bottom: 5%;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    nav {
+        flex-direction: column;
+        flex: 20;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    section {
+        flex: 80;
+    }
+
+
+}
