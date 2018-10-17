@@ -1,18 +1,87 @@
 
+@font-face {
+    font-family: "daredevil";
+    src: url(../fonts/daredevil.ttf);
+}
+
+body, html, .background-shadow {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body {
+    /*Background of page*/
     background-image: url("../images/heroes.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-attachment: fixed;
-    
 }
 
-table, td {
-    border: 1px solid black;
+.background-shadow {
+    background-image: linear-gradient(rgba(35, 38, 42, 50%), rgb(35,38, 42));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    /*Background file*/
+    background: url(../images/honneycomb.png);
+    /*Repeat picutre in x and y axis*/
+    background-repeat: repeat-x repeat-y;
+    /*Set background color*/
+    background-color: red;
+    /*Set the space between letters*/
+    letter-spacing: 0.2em;
+    /*Set the font*/
+    font-family: daredevil, Helvetica, sans-serif;
+    /*Height of h1*/
+    height: 2em;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    padding: 5% 20%;
+}
+
+.content-box {
+    background: linear-gradient(rgba(225, 225, 225, 0.7), rgb(255, 255, 255, 0.9));
+}
+
+.content-box p:nth-child(2) {
+    margin: 20px 0;
+}
+
+.content-box p, .content-box td {
+    padding: 0 5%;
+    text-align: justify;
+    font-family: Georgia, Times, serif;
+    color: black;
+}
+
+.content-box table {
+    margin: 0 5%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.content-box img {
+    padding: 20px 10px;
+}
+
+.content-box td {
+    padding: 10px;
+    border-bottom: 1px solid white;
 }
 
 footer {
     text-align: center;
+    color: white;
 }
