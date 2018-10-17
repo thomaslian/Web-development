@@ -22,9 +22,10 @@ body {
 
 .background-shadow {
     background-image: linear-gradient(rgba(35, 38, 42, 50%), rgb(35,38, 42));
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+    /*Keep shadow inside window, fixed position does not work*/
+    overflow-y: scroll;
 }
 
 h1 {
