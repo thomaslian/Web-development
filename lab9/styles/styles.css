@@ -42,6 +42,9 @@ footer p {
 
 .container {  
     padding: 0 60px;
+    max-width: 960px;
+    background-color: white;
+    margin: 0 auto;
 }
 
 header {
