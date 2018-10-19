@@ -1,8 +1,15 @@
+/***************************************
+FONTS
+***************************************/
 
 @font-face {
     font-family: "daredevil";
     src: url(../fonts/daredevil.ttf);
 }
+
+/***************************************
+GENERAL
+***************************************/
 
 body, html, .background-shadow {
     width: 100%;
@@ -21,15 +28,16 @@ body {
 }
 
 .background-shadow {
-    background-image: linear-gradient(rgba(35, 38, 42, 50%), rgb(35,38, 42));
     background-repeat: no-repeat;
     background-size: 100%;
     /*Keep shadow inside window, fixed position does not work*/
     overflow-y: scroll;
+    /* For index.html page */
+    background-image: linear-gradient(rgba(35, 38, 42, 50%), rgb(35,38, 42));
 }
 
 h1 {
-    /*Background file*/
+    /*Background image file*/
     background: url(../images/honneycomb.png);
     /*Repeat picutre in x and y axis*/
     background-repeat: repeat-x repeat-y;
@@ -50,39 +58,53 @@ main {
     padding: 5% 20%;
 }
 
-.content-box {
+.content {
+    box-shadow: 10px 10px 10px 1px rgba(231, 34, 49, 21%);
+    /* For index.html page */
     background: linear-gradient(rgba(225, 225, 225, 0.7), rgb(255, 255, 255, 0.9));
 }
 
-.content-box p:nth-child(2) {
-    margin: 20px 0;
-}
-
-.content-box p, .content-box td {
+.content p, .content td {
     padding: 0 5%;
     text-align: justify;
     font-family: Georgia, Times, serif;
+    /* For index.html page */
     color: black;
 }
 
-.content-box table {
-    margin: 0 5%;
-}
+/***************************************
+PAGE: index.html
+***************************************/
 
 table {
     border-collapse: collapse;
+    margin: 0 5%;
 }
 
-.content-box img {
+.content img {
     padding: 20px 10px;
 }
 
-.content-box td {
+.content td {
     padding: 10px;
     border-bottom: 1px solid white;
 }
+
+.content a {
+    color: black;
+}
+
+.no-link {
+    text-decoration: none;
+}
+
+/***************************************
+FOOTER
+***************************************/
 
 footer {
     text-align: center;
     color: white;
 }
+
+

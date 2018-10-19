@@ -1,0 +1,129 @@
+/***************************************
+PAGE: hero.html
+***************************************/
+.background-shadow {
+    background-image: linear-gradient(  rgba(255, 255, 255, 70%), 
+                                        rgba(255, 255, 255, 90%));
+}
+
+.content {
+    background: linear-gradient(rgba(35, 38, 42, 0.5), rgb(35, 38, 42, 0.9));
+}
+
+.content p, blockquote {
+    color: white;
+    line-height: 1em;
+}
+
+/***************************************
+CREDITS
+***************************************/
+
+#stan-lee {
+    font-family: "Courier new", Courier, Monospace;
+    text-decoration: underline;
+    word-spacing: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#intro::first-letter {
+    font-size: 200%;
+}
+
+#intro::first-line {
+    font-weight: bold;
+}
+
+/***************************************
+BLOCKQOUTE
+Not sure if this is the easiest way to do it
+***************************************/
+
+blockquote {
+    padding: 0 5%;
+    margin: 0;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+    margin: 0 5%;
+    line-height: 1em;
+}
+
+blockquote:before {
+    content: open-quote;
+    top: .5em;
+}
+  
+blockquote:after {
+    content: close-quote;
+    float: right;
+    bottom: .1em;
+}
+  
+blockquote:before, blockquote:after {
+    font-family: Georgia, Times, serif;
+    font-size: 4em;
+    font-weight: bold;
+    position: relative;
+    color: #cccccc;   
+}
+
+/***************************************
+TABLE
+***************************************/
+
+table {
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.content td{
+    color: white;
+    border-bottom: none;
+    width: 50%;
+    padding: 5px 10px;
+}
+
+#white-on-red {
+    margin-top: 50px;
+    background: #e422357a;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+#white-on-black {
+    background: #1515156a;
+}
+
+#white-on-yellow {
+    background: #E8B63D7a;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+#powers-heading {
+    text-align: center;
+}
+
+.content td h3, .content td p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.content td h3 {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+
+/***************************************
+FOOTER
+***************************************/
+
+footer {
+    color: black;
+}
