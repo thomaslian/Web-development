@@ -2,37 +2,60 @@
 PAGE: hero.html
 ***************************************/
 .background-shadow {
-    background-image: linear-gradient(  rgba(255, 255, 255, 70%), 
-                                        rgba(255, 255, 255, 90%));
+    /* Shadow for hero page */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
 }
 
 .content {
-    background: linear-gradient(rgba(35, 38, 42, 0.5), rgb(35, 38, 42, 0.9));
+    /* Background color for content of page */
+    background: linear-gradient(rgba(35, 38, 42, 0.5), rgba(35, 38, 42, 0.9));
+    /* Makes floated items stay inside content class */
+    overflow: hidden;
 }
 
-.content p, blockquote {
-    color: white;
+.content p, blockquote, .content td, h2, a {
+    /* Set color of text to white, imporant because of buttons */
+    color: white !important;
+}
+
+.content p, blockquote, blockquote p{
+    /* Set line height of text */
     line-height: 1em;
+}
+
+h2 {
+    /*Set the space between letters*/
+    letter-spacing: 0.2em;
+    /* Get the correct font */
+    font-family: "Robot", Helvetica, sans-serif;
 }
 
 /***************************************
 CREDITS
 ***************************************/
-
 #stan-lee {
+    /* Get the correct font */
     font-family: "Courier new", Courier, Monospace;
+    /* Text should have a underline */
     text-decoration: underline;
+    /* Spacing between words */
     word-spacing: 0.2em;
+    /* Size of font */
     font-size: 1.2em;
     font-weight: bold;
     font-style: italic;
 }
 
+/***************************************
+INTRO
+***************************************/
 #intro::first-letter {
+    /* First letter should be 200% bigger */
     font-size: 200%;
 }
 
 #intro::first-line {
+    /* First line should be bold */
     font-weight: bold;
 }
 
@@ -40,31 +63,33 @@ CREDITS
 BLOCKQOUTE
 Not sure if this is the easiest way to do it
 ***************************************/
-
 blockquote {
-    padding: 0 5%;
     margin: 0;
-    quotes: "\201C""\201D""\2018""\2019";
+    /* Get correct quote types */
+    quotes: "\201C""\201D"; 
 }
 
 blockquote p {
     margin: 0 5%;
-    line-height: 1em;
 }
 
 blockquote:before {
     content: open-quote;
-    top: .5em;
+    /* Adjusting where the qoute will go */
+    top: .35em;
 }
   
 blockquote:after {
     content: close-quote;
     float: right;
-    bottom: .1em;
+    /* Adjusting where the qoute will go */
+    bottom: -0.1em;
 }
   
 blockquote:before, blockquote:after {
+    /* Set the font */
     font-family: Georgia, Times, serif;
+    /* Size of the font */
     font-size: 4em;
     font-weight: bold;
     position: relative;
@@ -74,33 +99,37 @@ blockquote:before, blockquote:after {
 /***************************************
 TABLE
 ***************************************/
-
 table {
+    /* width of table */
     width: 50%;
+    /* Min width so the table does not go out of order */
     min-width: 300px;
+    /* Place the table in the middle */
     margin: 0 auto;
 }
 
 .content td{
-    color: white;
+    /* Remove border bottom from main.css file */
     border-bottom: none;
+    /* Each td should be 50% big */
     width: 50%;
+    /* Padding around each td */
     padding: 5px 10px;
 }
 
 #white-on-red {
     margin-top: 50px;
-    background: #e422357a;
+    background: rgba(228, 34, 53, 0.478);
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
 }
 
 #white-on-black {
-    background: #1515156a;
+    background: rgba(21, 21, 21, 0.416);
 }
 
 #white-on-yellow {
-    background: #E8B63D7a;
+    background: rgba(232, 182, 61, 0.478);
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
 }
@@ -115,15 +144,62 @@ table {
 }
 
 .content td h3 {
+    /* Align every h3 right */
     text-align: right;
     text-transform: uppercase;
 }
 
+/***************************************
+ARTICLE
+***************************************/
+article p {
+    /* Height of line */
+    line-height: 1.5em;
+    /* Make the text look nice */
+    text-align: justify;
+    /* Indent on start of each p */
+    text-indent: 1.4em;
+}
+
+/***************************************
+BUTTON
+***************************************/
+a {
+    /* Remove underline */
+    text-decoration: none;
+    /* Move them to the right */
+    float: right;
+    /* Make the buttons wider */
+    padding: 0 1%;
+    margin-bottom: 5%;
+    /* Make the corners round */
+    border-radius: 25%;
+    background-color: red;
+    /* Line height, height of buttons */
+    line-height: 2em;
+    /* Create som space between the buttons */
+    margin-left: 1%;
+}
+
+a:hover {
+    /* When the user hovers the text... */
+    /* ...create a underline */
+    text-decoration: underline;
+    /* ...make it bold */
+    font-weight: bold;
+    /* ...make the font size bigger */
+    font-size: 1.5em;
+}
+
+a:visited {
+    /* When user have clicked the button, make the text black */
+    color: black !important;
+}
 
 /***************************************
 FOOTER
 ***************************************/
-
 footer {
+    /* Footer text should be black */
     color: black;
 }
