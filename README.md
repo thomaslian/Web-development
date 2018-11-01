@@ -11,3 +11,4 @@ Projects from the web development course at NTNU (IMT1292).
 - lab5: Flowers. Adding CSS
 - lab8: Flexboxes
 - lab9: Grid layout
+- lab11: Animations
