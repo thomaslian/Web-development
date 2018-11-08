@@ -26,3 +26,24 @@ console.log("--Price: " + iceCreams["ice creams"][0].price + "NOK");
 //END REMOVE
 
 //Your implementation goes here
+//Exercise 2.1
+console.log("Exercise 2.1");
+console.log("--------------");
+for (i = 0; i < categories.length; i++){
+    console.log("Category " + i + ": " + categories[i]);
+}
+console.log("End exercise 2.1");
+
+//Exercise 2.2
+console.log("Exercise 2.2");
+console.log("--------------");
+for (i = 0; i < categories.length; i++){
+    console.log(" ");
+    console.log("Category " + i + ": " + categories[i]);
+    for (j = 0; j < iceCreams[categories[i]].length; j++){
+        console.log("-> Name: " + iceCreams[categories[i]][j].name);
+        console.log("-> Description: " + iceCreams[categories[i]][j].description);
+        console.log("-> Price: " + iceCreams[categories[i]][j].price);
+    }
+}
+console.log("End exercise 2.2");
