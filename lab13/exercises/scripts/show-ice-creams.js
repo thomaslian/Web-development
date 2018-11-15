@@ -5,4 +5,11 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
 */
 (function() {
     //your code goes here...
+    console.log(iceCreams["ice creams"][0].name);
+    for(var i = 0; i < iceCreams["ice creams"].length; i++){
+        var ul = document.createElement("ul");
+        var t = document.createTextNode("Menu[" + i + "] => " + iceCreams["ice creams"][i].name + ":" + iceCreams["ice creams"][i].description + ". " + iceCreams["ice creams"][i].price + " NOK");
+        ul.appendChild(t);   
+        document.body.appendChild(ul);
+    }
 })();

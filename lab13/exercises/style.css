@@ -2,7 +2,7 @@ body {
     padding: 5%;
 }
 
-.menu-item {
+#menu-item {
     padding: 20px;
     margin: 20px 0;
     box-shadow: 5px 5px 20px rgb(121, 108, 108);

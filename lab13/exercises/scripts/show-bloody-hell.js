@@ -5,4 +5,28 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
 */
 (function () {
     //Your code goes here...
+    //div
+    var myDiv = document.createElement("div");
+    myDiv.setAttribute("id", "menu-item");
+    document.body.appendChild(myDiv);
+
+    //h2
+    var h2 = document.createElement("h2");
+    h2.appendChild(document.createTextNode("Heading"));
+    document.getElementById("menu-item").appendChild(h2);
+
+    //p
+    var myP = document.createElement("p");
+    document.getElementById("menu-item").appendChild(myP);
+
+    //Span1
+    var span1 = document.createElement("span");
+    span1.appendChild(document.createTextNode("description goes here..."));
+    myP.appendChild(span1);
+
+    //Span2
+    var span2 = document.createElement("span");
+    span2.appendChild(document.createTextNode("XX NOK"));
+    span2.setAttribute("class", "price");
+    myP.appendChild(span2);
 })();
