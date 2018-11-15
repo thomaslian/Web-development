@@ -1,0 +1,129 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    /*Background of page*/
+    background-image: url("../logos/background.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    background-color: rgba(240, 240, 240, 0.9);
+    grid-template-columns: 5fr 8fr 3fr;
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header     menu    menu"
+    "main       main    sidebar"
+    "footer     footer  footer"
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 48px;
+    margin: 0;
+}
+
+header {
+    grid-area: header;
+    background-color: #363636;
+    color: white;
+    padding: 10px 5%;
+    text-align: center;
+    /*Create a small shadow beneath the navigation bar*/
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.23);
+}
+
+header p {
+    margin: 10px 0;
+}
+
+/***************************************
+NAVIGATION
+***************************************/
+
+nav {
+    /* Makes the content still fill the whole grid */
+    display: grid;
+    /* Set grid area to menu */
+    grid-area: menu;
+    /*Remove spaces between list items/boxes*/
+    font-size: 0;
+    /*Allign all text to the center*/
+    text-align: center;
+    /*Create a small shadow beneath the navigation bar*/
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.23);
+    background-color: #A10416;
+    color: white;
+}
+nav ul {
+    /* Align menu buttons to the bottom */
+    align-self: end;
+    /*Remove list style from the unordered list*/
+    list-style: none;
+    /*Set margin to 0*/
+    margin: 0;
+    /*Set padding to 0*/
+    padding: 0;
+}
+
+nav li {
+    /*Navigation should be inline*/
+    display: inline;
+}
+
+nav a {
+    /*Navigation should be inline blocks horizontal*/
+    display: inline-block;
+    /*Add som air around the word*/
+    padding: 14px 26px;
+    /*Make the text thicker*/
+    font-weight: 600;
+    /*Make the text bigger*/
+    font-size: 18px;
+    /*Remove style*/
+    text-decoration: none;
+    /*Set the color to white*/
+    color: white;
+}
+
+/***************************************
+Footer
+***************************************/
+footer {
+    grid-area: footer;
+    background-color: #A10416;
+    color: white;
+    text-align: center;
+    height: 80px;
+    
+}
+
+/***************************************
+SITE: index.html
+***************************************/
+main {
+    grid-area: main;
+    padding: 0 5%;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    margin: 10% 15% 10px 5%;
+    background-color: rgba(161, 4, 22, 0.8);
+    color: white;
+    border-radius: 10px;
+    max-height: 200px;
+}
+
+#sidebar h2, #sidebar p {
+    padding: 0 10%;
+}
