@@ -17,12 +17,13 @@ body {
 .container {
     display: grid;
     background-color: rgba(240, 240, 240, 0.9);
-    grid-template-columns: 5fr 8fr 3fr;
+    grid-template-columns: 5fr 6fr 5fr;
     min-height: 100%;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
     "header     menu    menu"
     "main       main    sidebar"
+    "extra      extra   extra"
     "footer     footer  footer"
 }
 
@@ -30,6 +31,24 @@ h1 {
     font-family: 'Chelsea Market', cursive;
     font-size: 48px;
     margin: 0;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+a {
+    color: white;
+}
+
+main {
+    grid-area: main;
+    padding: 0 5%;
+    margin: 25px 15% 10px 5%;
+    background-color: rgba(161, 4, 22, 0.8);
+    color: white;
+    border-radius: 10px;
+    
 }
 
 header {
@@ -45,6 +64,12 @@ header {
 header p {
     margin: 10px 0;
 }
+
+.selected {
+    border-bottom: 3px solid white;
+}
+
+
 
 /***************************************
 NAVIGATION
@@ -95,6 +120,35 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    /* Set color on text when user is hovering over it */
+    color: #363636;
+}
+
+/***************************************
+Sidebar
+***************************************/
+
+#sidebar {
+    grid-area: sidebar;
+    margin: 25px 15% 10px 5%;
+    background-color: rgba(161, 4, 22, 0.8);
+    color: white;
+    border-radius: 10px;
+    max-height: 160px;
+}
+
+#sidebar h2, #sidebar p {
+    padding: 0 10%;
+}
+
+/***************************************
+Extra
+***************************************/
+#extra {
+    grid-area: extra;
+}
+
 /***************************************
 Footer
 ***************************************/
@@ -108,22 +162,78 @@ footer {
 }
 
 /***************************************
-SITE: index.html
+Page: index.html
 ***************************************/
-main {
-    grid-area: main;
-    padding: 0 5%;
-}
-
-#sidebar {
-    grid-area: sidebar;
-    margin: 10% 15% 10px 5%;
-    background-color: rgba(161, 4, 22, 0.8);
-    color: white;
-    border-radius: 10px;
+#home main{
     max-height: 200px;
 }
 
-#sidebar h2, #sidebar p {
-    padding: 0 10%;
+/***************************************
+Page: ice-creams.html
+***************************************/
+
+#ice-creams main{
+    max-height: 130px;
 }
+
+/***************************************
+Page: reservations.html
+***************************************/
+#reservations main{
+    max-height: 675px;
+}
+
+form div {
+    margin-top: 15px;
+}   
+
+form label {
+    margin: 15px 0 5px 0;
+    display: block;
+}
+
+/* This is for adults, children and infants input */
+form div input {
+    display: inline-block;
+    width: 50px;
+    margin-right: 5px;
+}
+
+form div label {
+    /* Set the margin for adults, children and infants text under the input */
+    margin: 5px 0 0 0;
+}
+
+form div {
+    display: inline-block;
+    margin: 0;
+}
+
+form #submit {
+    margin-top: 20px;
+    display: block;
+}
+
+/***************************************
+Page: contact.html
+***************************************/
+#contact main {
+    max-height: 350px;
+}
+
+#contact #extra {
+    margin: 25px 3.5%;
+    padding: 10px 5%;
+    background-color: rgba(161, 4, 22, 0.8);
+    color: white;
+    border-radius: 10px;
+}
+
+#contact #extra iframe{
+    height: 400px;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
