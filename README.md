@@ -1,5 +1,5 @@
-# Web Development
-Projects from the web development course at NTNU (IMT1292).
+# Web Coding
+Projects from the web coding course at NTNU (IMT1292).
 
 ## Folder information
 - coursework1-portfolio: My portfolio. We started with this in Lab 3 at exercise 2
