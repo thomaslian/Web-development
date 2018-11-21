@@ -12,7 +12,7 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
 
     //h2
     var h2 = document.createElement("h2");
-    h2.appendChild(document.createTextNode("Heading"));
+    h2.innerHTML = iceCreams["ice creams"][0].name;
     document.getElementById("menu-item").appendChild(h2);
 
     //p
@@ -21,12 +21,12 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
 
     //Span1
     var span1 = document.createElement("span");
-    span1.appendChild(document.createTextNode("description goes here..."));
+    span1.innerHTML = iceCreams["ice creams"][0].description;
     myP.appendChild(span1);
 
     //Span2
     var span2 = document.createElement("span");
-    span2.appendChild(document.createTextNode("XX NOK"));
+    span2.innerHTML = iceCreams["ice creams"][0].price + " NOK";
     span2.setAttribute("class", "price");
     myP.appendChild(span2);
 })();

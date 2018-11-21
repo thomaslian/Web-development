@@ -6,7 +6,7 @@ html, body {
 body {
     margin: 0;
     /*Background of page*/
-    background-image: url("../logos/background.png");
+    background-image: url("../images/background.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -33,6 +33,11 @@ h1 {
     margin: 0;
 }
 
+h1 a {
+    /*Remove style*/
+    text-decoration: none;
+}
+
 h3 {
     margin-bottom: 5px;
 }
@@ -45,7 +50,7 @@ main {
     grid-area: main;
     padding: 0 5%;
     margin: 25px 15% 10px 5%;
-    background-color: rgba(161, 4, 22, 0.8);
+    background-color: rgba(161, 4, 22, 0.85);
     color: white;
     border-radius: 10px;
     
@@ -132,7 +137,7 @@ Sidebar
 #sidebar {
     grid-area: sidebar;
     margin: 25px 15% 10px 5%;
-    background-color: rgba(161, 4, 22, 0.8);
+    background-color: rgba(161, 4, 22, 0.85);
     color: white;
     border-radius: 10px;
     max-height: 160px;
@@ -164,7 +169,7 @@ footer {
 /***************************************
 Page: index.html
 ***************************************/
-#home main{
+#home main {
     max-height: 200px;
 }
 
@@ -172,14 +177,38 @@ Page: index.html
 Page: ice-creams.html
 ***************************************/
 
-#ice-creams main{
+#ice-creams main {
     max-height: 130px;
+}
+
+#ice-cream-list {
+    grid-area: extra;
+    padding: 0 5%;
+    margin: 25px 5%;
+    background-color: rgba(161, 4, 22, 0.85);
+    color: white;
+    border-radius: 10px;
+}
+
+#menu-item {
+    padding: 0 5%;
+    background-color: #363636;
+    color: white;
+    border-radius: 10px;
+}
+
+#menu-item h2, #menu-item p {
+    padding: 5px 0;
+}
+
+#menu-item .price {
+    float: right;
 }
 
 /***************************************
 Page: reservations.html
 ***************************************/
-#reservations main{
+#reservations main {
     max-height: 675px;
 }
 
@@ -229,7 +258,7 @@ Page: contact.html
     border-radius: 10px;
 }
 
-#contact #extra iframe{
+#contact #extra iframe {
     height: 400px;
     width: 100%;
     display: block;
