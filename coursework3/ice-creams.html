@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container" id="home">
+    <div class="container" id="ice-creams">
         <!-- Heading -->
         <header>
             <h1><a href="index.html">I Scream</a></h1>
@@ -23,8 +23,8 @@
         <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="ice-creams.html">Our ice cream</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ice-creams.html" class="selected">Our ice cream</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -34,40 +34,30 @@
         <div class="wrapper">
             <!-- Main -->
             <main>
-                <h2>Welcome</h2>
+                <h2>Our ice creams</h2>
                 <p>
-                    I Scream is a ice cream shop with a horror theme.
-                    This means that the ice cream you buy from us, will have a horror themed look.
-                    Visit our shop to get a spooky experience.
-                </p>
-                <p>
-                    We have a lot of different ice creams that you could choose from. You will find them under the "our
-                    ice
-                    cream" page.
+                    Here you will find a list of the different ice creams, sundaes, mousses and smoothies we have.
                 </p>
             </main>
 
             <!-- Sidebar -->
             <div id="sidebar">
                 <h2>Did you know?</h2>
-                <p>The taste of our ice cream could actually make you scream</p>
+                <p>Bloody hell is the most sold ice cream</p>
             </div>
 
-            <div id="extra">
-                <h2>Ice cream photos</h2>
-                <img src="images/halloween.jpg" alt="Ice cream with pumpkin in background">
-                <img src="images/oreo.jpg" alt="Orea ice cream in glass">
-                <img src="images/ice-sandwich.jpg" alt="Ice cream sandwich with eyes">
-            </div>
+            <!-- Ice creams -->
+            <div id="ice-cream-list"></div>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; I Scream productions</p>
+        </footer>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; I Scream productions</p>
-    </footer>
-
-    </div>
+    <script src="scripts/menu-db.js"></script>
+    <script src="scripts/show-ice-creams.js"></script>
 </body>
 
 </html>

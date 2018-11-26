@@ -1,25 +1,18 @@
-/*
-Javascript code is loaded "globally" in the pages. For "security" reasons,
-it is a good practice to encapsulate the code inside an  anonymous function that is executed when the file is loaded. In new JS versions, this is solved using modules.
-Anyway, don't worry about that, you will learn that stuff in other courses.
-*/
-(function () {
-    // var helpers = HELPERS();
 
-    //Your code goes here...
+(function () {
+    var iceCreamDiv = document.getElementById("ice-cream-list");
+
     for (var j = 0; j < categories.length; j++) {
         //h2
         var iceCreamCategory = document.createElement("h2");
-        //Create a text node, otherwise it wont make a h2 element
-        var category = document.createTextNode(categories[j]);
-        iceCreamCategory.appendChild(category);
-        document.body.append(iceCreamCategory);
+        iceCreamCategory.innerHTML = categories[j];
+        iceCreamDiv.appendChild(iceCreamCategory);
 
         for (var i = 0; i < iceCreams[categories[j]].length; i++) {
             //div
             var myDiv = document.createElement("div");
             myDiv.setAttribute("id", "menu-item");
-            document.body.appendChild(myDiv);
+            iceCreamDiv.appendChild(myDiv);
 
             //h2
             var h2 = document.createElement("h2");
