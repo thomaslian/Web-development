@@ -7,9 +7,10 @@ Anyway, don't worry about that, you will learn that stuff in other courses.
     console.log(categories.length);
     //Your code goes here...
     for(var i = 0; i < categories.length; i++){
-        var para = document.createElement("P");
-        var t = document.createTextNode(categories[i]);
-        para.appendChild(t);   
+        var para = document.createElement("p");
+        para.innerHTML = categories[i];
+        // var t = document.createTextNode(categories[i]);
+        // para.appendChild(t);   
         document.body.appendChild(para);
     }
 })();
