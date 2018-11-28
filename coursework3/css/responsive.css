@@ -1,0 +1,91 @@
+@media screen and (max-width: 945px) {
+    /***************************************
+    GENERAL
+    ***************************************/
+
+    /* Contains the header, menu, content(wrapper) and footer */
+    .container {
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+        "header     header"
+        "menu       menu"
+        "main       main"
+        "footer     footer"
+    }
+
+    /* For the main content of the page */
+    .wrapper {
+        grid-template-areas:
+        "content    content"
+        "extra      extra"
+        "sidebar    sidebar"
+    }
+
+    /***************************************
+    Sidebar
+    ***************************************/
+
+    #sidebar {
+        padding: 20px 5%;
+    }
+
+
+    /***************************************
+    Page: index.html
+    ***************************************/
+    #home main {
+    max-height: 100%;
+    }
+
+    /***************************************
+    Page: reservations.html
+    ***************************************/
+    #reservations .wrapper {
+        grid-template-areas:
+        "content    content"
+        "content    content"
+        "sidebar    sidebar"
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /***************************************
+    GENERAL
+    ***************************************/
+    .container {
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .wrapper {
+        margin: 20px 1%;
+    }
+
+    /***************************************
+    NAVIGATION
+    ***************************************/
+    nav li {
+        display: block;
+        }
+    
+    nav a {
+        padding: 14px 0;
+        width: 100%;
+        }
+
+    nav a:hover, .selected {
+        /* Set color on text when user is hovering over it */
+        color: white;
+        background-color: #363636;
+        border: none;
+    }
+
+    /***************************************
+    Page: index.html
+    ***************************************/
+    #extra img {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+}

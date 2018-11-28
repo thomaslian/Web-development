@@ -1,3 +1,6 @@
+/***************************************
+GENERAL
+***************************************/
 html, body {
     width: 100%;
     height: 100%;
@@ -20,7 +23,7 @@ body {
     background-color: rgba(240, 240, 240, 0.9);
     grid-template-columns: 5fr 11fr;
     min-height: 100%;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr 80px;
     grid-template-areas:
     "header     menu"
     "main       main"
@@ -33,7 +36,6 @@ body {
     margin: 20px 4%;
     display: grid;
     grid-template-columns: 11fr 5fr;
-    grid-row-start: 100px;
     column-gap: 5%;
     row-gap: 30px;
     grid-template-areas:
@@ -152,11 +154,10 @@ Sidebar
     color: white;
     border-radius: 10px;
     max-height: 160px;
+    padding: 20px 10%;
 }
 
-#sidebar h2, #sidebar p {
-    padding: 0 10%;
-}
+
 
 /***************************************
 Extra
@@ -177,7 +178,6 @@ footer {
     background-color: #A10416;
     color: white;
     text-align: center;
-    height: 80px;
 }
 
 footer p {
@@ -259,7 +259,8 @@ form div {
 }
 
 form #submit {
-    margin-top: 20px;
+    margin: 20px 0;
+    position: relative;
     display: block;
 }
 
