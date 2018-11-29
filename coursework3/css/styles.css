@@ -65,6 +65,10 @@ a {
 main {
     grid-area: content;
     padding: 0 5%;
+}
+
+/* This is the background boxes of the "main" content of the page */
+main, #sidebar, #extra, #ice-cream-list {
     background-color: rgba(161, 4, 22, 0.85);
     color: white;
     border-radius: 10px;
@@ -150,9 +154,6 @@ Sidebar
 
 #sidebar {
     grid-area: sidebar;
-    background-color: rgba(161, 4, 22, 0.85);
-    color: white;
-    border-radius: 10px;
     max-height: 160px;
     padding: 20px 10%;
 }
@@ -165,9 +166,6 @@ Extra
 #extra, #ice-cream-list {
     grid-area: extra;
     padding: 20px 5%;
-    background-color: rgba(161, 4, 22, 0.85);
-    color: white;
-    border-radius: 10px;
 }
 
 /***************************************
@@ -228,10 +226,6 @@ Page: ice-creams.html
 /***************************************
 Page: reservations.html
 ***************************************/
-#reservations main {
-    max-height: 675px;
-}
-
 form div {
     margin-top: 15px;
 }   

@@ -52,9 +52,6 @@
     /***************************************
     GENERAL
     ***************************************/
-    .container {
-        grid-template-rows: auto auto 1fr auto;
-    }
 
     .wrapper {
         margin: 20px 1%;
