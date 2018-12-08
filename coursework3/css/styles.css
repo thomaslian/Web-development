@@ -1,4 +1,18 @@
 /***************************************
+FONTS
+***************************************/
+@font-face {
+    font-family: 'Chelsea Market';
+    src: url(../fonts/ChelseaMarket-Regular.ttf);
+  }
+
+@font-face {
+font-family: 'Roboto Condensed';
+src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+
+/***************************************
 GENERAL
 ***************************************/
 html, body {

@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>I Scream - I scream for ice cream</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -41,37 +39,37 @@
                 </p>
 
                 <!-- Form -->
-                <form>
+                <form name="form" onsubmit="return validateForm()">
                     <!-- Date input -->
-                    <label>Delivery date:</label>
-                    <input type="date" value="2018-12-01" min="2018-12-01" max="2019-12-31">
+                    <label>Date:</label>
+                    <input type="date" name="date" required>
 
                     <!-- Time input -->
-                    <label>Choose a time for your delivery:</label>
-                    <input type="time" value="16:00" required>
+                    <label>Choose a time for your visit:</label>
+                    <input type="time" name="time" value="16:00" required>
 
                     <!-- Number of people input -->
                     <label>Choose the number of people:</label>
                     <div>
-                        <input type="number" name="points" min="0" value="0">
+                        <input type="number" name="nadults" min="0" value="0">
                         <label>Adults</label>
                     </div>
                     <div>
-                        <input type="number" name="points" min="0" value="0">
+                        <input type="number" name="nchildren" min="0" value="0">
                         <label>Children</label>
                     </div>
                     <div>
-                        <input type="number" name="points" min="0" value="0">
+                        <input type="number" name="ninfants" min="0" value="0">
                         <label>Infants</label>
                     </div>
 
                     <!-- Fist name input -->
                     <label>Enter your first name:</label>
-                    <input type="text">
+                    <input type="text" name="fname">
 
                     <!-- Surname input -->
                     <label>Enter your surname:</label>
-                    <input type="text">
+                    <input type="text" name="sname">
 
                     <!-- Phone input -->
                     <label>Enter your phone number:</label>
@@ -79,13 +77,11 @@
 
                     <!-- Email input -->
                     <label>Enter your email:</label>
-                    <input type="email">
+                    <input type="email" name="email">
 
                     <!-- Other comment input -->
                     <label>Other comments:</label>
-                    <input type="text" size="30">
-
-
+                    <input type="text" size="30" name="comments">
 
                     <!-- Submit button -->
                     <input id="submit" type="submit" value="Submit">
@@ -98,7 +94,6 @@
                 <p>The first time we accepted customers in our shop was on halloween</p>
             </div>
 
-
         </div>
         <!-- Footer -->
         <footer>
@@ -106,6 +101,7 @@
         </footer>
     </div>
 
+    <script src="scripts/form-validation.js"></script>
 </body>
 
 </html>
