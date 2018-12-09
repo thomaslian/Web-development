@@ -85,8 +85,7 @@ main {
 main, #sidebar, #extra, #ice-cream-list {
     background-color: rgba(161, 4, 22, 0.85);
     color: white;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
 
 header {
@@ -102,11 +101,6 @@ header {
 header p {
     margin: 10px 0;
 }
-
-.selected {
-    border-bottom: 3px solid white;
-}
-
 
 /***************************************
 NAVIGATION
@@ -160,6 +154,11 @@ nav a {
 nav a:hover {
     /* Set color on text when user is hovering over it */
     color: #363636;
+}
+
+.selected {
+    /* Adds a white under the name of the current page */
+    border-bottom: 3px solid white;
 }
 
 /***************************************
@@ -218,6 +217,7 @@ Page: index.html
 Page: ice-creams.html
 ***************************************/
 
+/* The black box around each ice cream */
 #menu-item {
     padding: 0 5%;
     margin-bottom: 15px;
@@ -227,14 +227,21 @@ Page: ice-creams.html
     overflow: hidden;
 }
 
+/* Padding of h2 and p of each ice cream */
 #menu-item h2, #menu-item p {
     padding: 5px 0;
 }
 
+/* Price of each ice cream */
 #menu-item .price {
     float: right;
     font-size: 25px;
-    
+}
+
+/* Sorting menu */
+#sorting-menu a, #sorting-menu p {
+    padding-right: 5px;
+    display: inline-block;
 }
 
 /***************************************
@@ -266,6 +273,7 @@ form div {
     margin: 0;
 }
 
+/* For the submit button */
 form #submit {
     margin: 20px 0;
     position: relative;
@@ -276,10 +284,11 @@ form #submit {
 Page: contact.html
 ***************************************/
 
+/* Google Maps */
 #contact #extra iframe {
     height: 400px;
     width: 100%;
-    display: block;
+    display: block;  
     margin: 10px auto;
     border: 1px solid black;
 }

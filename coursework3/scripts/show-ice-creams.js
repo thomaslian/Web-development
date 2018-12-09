@@ -10,19 +10,26 @@ var currentCategory;
 })();
 
 function loopCategories() {
+    //Creates the "sort by" menu
+    //This is the div that will hold the menu
     var sortingMenu = document.createElement("div");
     sortingMenu.setAttribute("id", "sorting-menu");
     iceCreamDiv.appendChild(sortingMenu);
 
-    var sortByNameButton = document.createElement("a");
+    //Sorting description
+    var sortByNameButton = document.createElement("p");
     sortByNameButton.innerHTML = "Sort by (will be sorted in each category): ";
     sortingMenu.appendChild(sortByNameButton);
 
+    //Defualt button, just reloads the page
     var sortByNameButton = document.createElement("a");
     sortByNameButton.innerHTML = "default ";
     sortByNameButton.href = "ice-creams.html";
     sortingMenu.appendChild(sortByNameButton);
 
+    //Sort by name button. 
+    // This sets "sortingByName" to true, removes everything inside the ice-cream-list
+    // and runs loopCategories function again.
     var sortByNameButton = document.createElement("a");
     sortByNameButton.innerHTML = "name ";
     sortByNameButton.href = "#";
@@ -31,25 +38,28 @@ function loopCategories() {
     });
     sortingMenu.appendChild(sortByNameButton);
 
-    var sortByNameButton = document.createElement("a");
-    sortByNameButton.innerHTML = "price ";
-    sortByNameButton.href = "#";
-    sortByNameButton.addEventListener("click", function(){
+    //Sort by price button
+    var sortByPriceButton = document.createElement("a");
+    sortByPriceButton.innerHTML = "price ";
+    sortByPriceButton.href = "#";
+    sortByPriceButton.addEventListener("click", function(){
         sortingByPrice = true; removeOldIceCream(); loopCategories();
     });
-    sortingMenu.appendChild(sortByNameButton);
+    sortingMenu.appendChild(sortByPriceButton);
 
-    var sortByNameButton = document.createElement("a");
-    sortByNameButton.innerHTML = "description";
-    sortByNameButton.href = "#";
-    sortByNameButton.addEventListener("click", function(){
+    // Sort by description button
+    var sortByDescButton = document.createElement("a");
+    sortByDescButton.innerHTML = "description";
+    sortByDescButton.href = "#";
+    sortByDescButton.addEventListener("click", function(){
         sortingByDescription = true; removeOldIceCream(); loopCategories();
     });
-    sortingMenu.appendChild(sortByNameButton);
+    sortingMenu.appendChild(sortByDescButton);
 
 
+    // Goes through each category loop
     for (var j = 0; j < categories.length; j++) {
-        //h2
+        //h2 (the header for each category)
         var iceCreamCategory = document.createElement("h2");
         iceCreamCategory.innerHTML = categories[j];
 
@@ -60,20 +70,25 @@ function loopCategories() {
             iceCreamCategory.innerHTML += " (sorted by name)";
         }
         
+        // Sort by price
         if (sortingByPrice) {
             sortByPrice(j);
             iceCreamCategory.innerHTML += " (sorted by price)";
         }
 
+        //Sort by description
         if (sortingByDescription) {
             sortByDescription(j);
             iceCreamCategory.innerHTML += " (sorted by description)";
         }
+        //This adds the category name to the page
         iceCreamDiv.appendChild(iceCreamCategory);
 
+        //Store current category in a variable to make it more readable
         currentCategory = iceCreams[categories[j]];
+        //Go through each icecream in that category and list it on the page
         for (var i = 0; i < currentCategory.length; i++) {
-            //div
+            //div (id: menu-item)
             var myDiv = document.createElement("div");
             myDiv.setAttribute("id", "menu-item");
             iceCreamDiv.appendChild(myDiv);
@@ -100,7 +115,7 @@ function loopCategories() {
         }
     }
 
-    //  Make sure that everything is set to false, otherwise multiple items will set to true
+    // Make sure that everything is set to false, otherwise multiple items will be set to true
     sortingByName = false;
     sortingByPrice = false;
     sortingByDescription = false;

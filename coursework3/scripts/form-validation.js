@@ -1,10 +1,10 @@
 function validateForm(){
-    //Date
+    //Date variables
     var dateFromForm = document.forms["form"]["date"].value;
     var inputDate = new Date(dateFromForm).setHours(0,0,0,0);
     var todaysDate = new Date();
 
-    //Time
+    //Time variables
     var inputHour;
     var inputTime = document.forms["form"]["time"].value;
     

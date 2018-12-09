@@ -2,7 +2,7 @@
     /***************************************
     GENERAL
     ***************************************/
-    /* So the page does not go to wide on lager screens */
+    /* For the .wrapper. Content should not go to wide on lager screens */
     .wrapper {
         width: 1100px;
         margin: 20px auto;
@@ -38,6 +38,7 @@
     ***************************************/
 
     #sidebar {
+        /* Fix the padding when the sidebar gets moved */
         padding: 20px 5%;
     }
 
@@ -46,7 +47,8 @@
     Page: index.html
     ***************************************/
     #home main {
-    max-height: 100%;
+        /* Main box should always fill the whole area on smaller screens because it looks better */
+        max-height: 100%;
     }
 
     /***************************************
@@ -82,7 +84,7 @@
         }
 
     nav a:hover, .selected {
-        /* Set color on text when user is hovering over it */
+        /* Set color on background when user is on that page or is hovering over it */
         color: white;
         background-color: #363636;
         border: none;
